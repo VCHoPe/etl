@@ -1,0 +1,17 @@
+{
+  "name": "etl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fast-csv": "^4.3.5",
+    "knex": "^0.21.12",
+    "lodash": "^4.17.20",
+    "pg": "^8.5.1"
+  }
+}
