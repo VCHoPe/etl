@@ -1,17 +1,9 @@
 const fs = require('fs')
 const csv = require('fast-csv')
 const { snakeCase, keys, reduce } = require('lodash')
+const knexFile = require('./knexfile')
 
-const knex = require('knex')({
-  client: 'postgresql',
-  connection: {
-    host: 'localhost',
-    user: 'postgres',
-    password: 'postgres',
-    database: 'etl',
-    port: 5432,
-  },
-})
+const knex = require('knex')(knexFile)
 
 const extract = (fileName) => {
   return new Promise((resolve) => {
